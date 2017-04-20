@@ -1,26 +1,36 @@
-title: 冼国基
-description: 我的个人博客
-author: 冼国基
-logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/xianguoji
-about: Freelance developer
+# Site settings
+title: Forty
+subtitle: by HTML5 UP
+email: youremailaddress@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author:
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
 
-baseurl: "https://codeasashu.github.io/hcz-jekyll-blog/about/"
-url: "https://codeasashu.github.io/hcz-jekyll-blog"
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+# Social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
-
-
-enableTags: true
-tagarray: []
-
-paginate: 20
-per_page: 20
-paginate_path: "/page:num/"
+# Build settings
 markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]
+
+sass:
+  style: compressed
