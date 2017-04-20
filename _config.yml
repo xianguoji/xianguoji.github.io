@@ -1,10 +1,10 @@
 title: 冼国基的博客
 email: 375751459@qq.com
 author:
-  picture: images/myphoto.jpg #URL FORMAT
+  picture: ./images/myphoto.jpg #URL FORMAT
   name: 冼国基
   location: Rio de Janeiro - Brazil
-  description: "菜鸟前端工程师"  
+  description: "菜鸟前端工程师"
 description: only my simple vision of casper theme
 baseurl: "/"
 url: https://hugocarreira.github.io/jekyll-vision-casper-theme

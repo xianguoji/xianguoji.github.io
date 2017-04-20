@@ -1,25 +1,78 @@
 ---
 layout: post
-title:  "欢迎来到冼国基的博客!"
+title:  "锤子科技官网banner3D效果"
 date:   2017-4-20 11:11:27 -0800
 author: hugocarreira
 description: "post description"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+前段时间看到锤子官网的banner3D效果觉得好酷炫，然后就在网上搜了一下实现方法，发现还真有。
+我就借鉴了他的demo来自己写了一个简单背景变换的demo，因为没有做过渡效果，没官网好看，还算凑合，
+可以看效果
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+
+
+        section {
+            margin: auto;
+            width: 1000px;
+            height: 500px;
+            margin-top: 100px;
+        }
+
+        .cover {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: #5e5e5e;
+        }
+
+        /*transform*/
+        section {
+            position: relative;
+            perspective: 2000px;
+        }
+
+        .cover {
+            transform-origin: 50% 50% 0;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="cover">
+    </div>
+</section>
+<script>
+    var origin = {
+        X: document.body.clientWidth / 2,
+        Y: document.body.clientHeight / 2
+    };
+    var o = document.querySelector('.cover');
+    document.querySelector('section').onmouseover=function(){
+        document.querySelector('section').addEventListener('mousemove', function (e) {
+            var rotate = {x: 1 - e.pageY / origin.Y, y: e.pageX / origin.X - 1};
+            var transform = "rotateX(" + rotate.x *10 + "deg) rotateY(" + rotate.y * 10 + "deg)";  //变换效果
+            o.style.transform = transform;
+            o.style.boxShadow = -parseInt(rotate.y * 30) + 'px '+ parseInt(rotate.x * 20+20)+ 'px ' + '50px #333';  //边框阴影效果
+        });
+    };
+    document.querySelector('section').onmouseout=function(){
+            o.style.transform ="rotateX(0deg) rotateY(0deg)";
+        o.style.boxShadow ='0px 0px';
+    }
+
+</script>
+</body>
+</html>
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+123123
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
