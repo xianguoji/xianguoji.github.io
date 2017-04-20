@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-11-25 19:30:27 -0800
+title:  "欢迎来到冼国基的博客!"
+date:   2017-4-20 11:11:27 -0800
 author: hugocarreira
 description: "post description"
 ---
