@@ -1,0 +1,92 @@
+---
+layout: post
+title: "转发潘柏信的--HEXO搭建个人博客"
+date: 2015-08-25 
+description: "HEXO配置，HEXO+Github，搭建自己的博客"
+tag: 博客 
+---   
+
+　　# 锤子科技官网banner3D效果
+
+
+
+  前段时间看到锤子官网的banner3D效果觉得好酷炫，然后就在网上搜了一下实现方法，发现还真有。
+  我就借鉴了他的demo来自己写了一个简单背景变换的demo，因为没有做过渡效果，没官网好看，还算凑合，
+  可以看效果
+
+  这是锤子官网效果，可以自行去看看：http://www.smartisan.com/#/home
+
+
+
+
+  附上代码：
+
+
+  ```sh
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8"/>
+      <style>
+
+
+          section {
+              margin: auto;
+              width: 1000px;
+              height: 500px;
+              margin-top: 100px;
+          }
+
+          .cover {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+              background-color: #5e5e5e;
+          }
+
+          /*transform*/
+          section {
+              position: relative;
+              perspective: 2000px;
+          }
+
+          .cover {
+              transform-origin: 50% 50% 0;
+          }
+
+      </style>
+  </head>
+  <body>
+  <section>
+      <div class="cover">
+      </div>
+  </section>
+  <script>
+      var origin = {
+          X: document.body.clientWidth / 2,
+          Y: document.body.clientHeight / 2
+      };
+      var o = document.querySelector('.cover');
+      document.querySelector('section').onmouseover=function(){
+          document.querySelector('section').addEventListener('mousemove', function (e) {
+              var rotate = {x: 1 - e.pageY / origin.Y, y: e.pageX / origin.X - 1};
+              var transform = "rotateX(" + rotate.x *10 + "deg) rotateY(" + rotate.y * 10 + "deg)";  //变换效果
+              o.style.transform = transform;
+              o.style.boxShadow = -parseInt(rotate.y * 30) + 'px '+ parseInt(rotate.x * 20+20)+ 'px ' + '50px #333';  //边框阴影效果
+          });
+      };
+      document.querySelector('section').onmouseout=function(){
+              o.style.transform ="rotateX(0deg) rotateY(0deg)";
+          o.style.boxShadow ='0px 0px';
+      }
+
+  </script>
+  </body>
+  </html>
+  ```
+
+
+
+
+
+  ### 这段时间在做自己的博客网站，欢迎大神指导：https://xianguoji.github.io
