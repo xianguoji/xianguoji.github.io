@@ -3,7 +3,7 @@ title: 冼国基
 subtitle: 个人站
 description: 欢迎来到我的个人站~
 # 头像里面的标题
-avatarTitle: web前端工程师
+avatarTitle: 前端工程师
 # 头像里面的描述
 avatarDesc: JavaScript
 url: "https://xianguoji.github.io"
@@ -15,10 +15,10 @@ comment:
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo: 375751459
+    github: xianguoji
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: https://xianguoji.github.io
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
