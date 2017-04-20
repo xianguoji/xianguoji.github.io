@@ -1,11 +1,11 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
+title: 冼国基
+description: 我的个人博客
+author: 冼国基
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/ashutosh2k12
+github: https://github.com/xianguoji
 about: Freelance developer
 
-baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
+baseurl: "https://codeasashu.github.io/hcz-jekyll-blog/about/"
 url: "https://codeasashu.github.io/hcz-jekyll-blog"
 
 disqus_shortname: aboutashu
