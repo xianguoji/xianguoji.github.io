@@ -1,10 +1,4 @@
-﻿---
-layout: post
-title: "Rem自适应js-优化flexible.js"
-date: 2017-03-12
-description: "Rem自适应js-优化flexible.js"
-tag: rem
----
+﻿
 
 基于阿里的一个库：lib-flexible.js，里面有一些东西方法和自定义不需要用到的，所以做了一个精简版的，另外还修复了UC浏览器竖屏与横屏转换的BUG。
 
