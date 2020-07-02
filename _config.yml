@@ -6,7 +6,8 @@ description: 欢迎来到我的个人网站
 avatarTitle: 前端工程师
 # 头像里面的描述
 avatarDesc: JavaScript
-url: "https://xianguoji.github.io"
+url: "https://gitee.com/xianguoji/Blog"
+baseurl: "/Blog"
 
 # Comment
 comment:
@@ -16,9 +17,9 @@ comment:
 # Social
 social:
     weibo: 375751459
-    github: xianguoji
+    gitee: xianguoji
     # twitter: 
-    mail: https://xianguoji.github.io
+    mail: https://gitee.com/xianguoji/Blog
 
 # 百度统计
 # 使用博客模板请去掉或者更换 id
@@ -34,9 +35,6 @@ social:
 
 # 《----------------- 上面的信息修改成你自己的 ---------------------------》
 #
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
@@ -68,5 +66,3 @@ paginate: 20
 paginate_path: "page/:num/"
 
 
-
-theme: jekyll-theme-cayman
