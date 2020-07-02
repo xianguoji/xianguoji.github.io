@@ -6,13 +6,11 @@ description: 欢迎来到我的个人网站
 avatarTitle: 前端工程师
 # 头像里面的描述
 avatarDesc: JavaScript
-url: "https://gitee.com/xianguoji/Blog"
-baseurl: "/Blog"
+url: "http://baixin.io"
 
 # Comment
 comment:
-    # disqus: leopard
-    duoshuo: leopard 
+    disqus: leopard
 
 # Social
 social:
