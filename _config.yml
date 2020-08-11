@@ -6,7 +6,8 @@ description: 欢迎来到我的个人网站
 avatarTitle: 前端工程师
 # 头像里面的描述
 avatarDesc: JavaScript
-url: "http://baixin.io"
+url: "https://xianguoji.github.io/xianguoji.github.io"
+root: /xianguoji.github.io/
 
 # Comment
 comment:
